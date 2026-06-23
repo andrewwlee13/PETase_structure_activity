@@ -1,0 +1,41 @@
+# PETase structure–activity conda environment
+#
+# Create (first time):
+#   conda env create -f environment.yml
+#
+# Update after editing this file:
+#   conda env update -f environment.yml --prune
+#
+# Activate:
+#   conda activate petase_structure_activity
+#
+# Register Jupyter kernel (once):
+#   python -m ipykernel install --user --name petase_structure_activity --display-name "PETase structure-activity"
+
+name: petase_structure_activity
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  # data
+  - pandas
+  - openpyxl
+  - numpy
+  - scipy
+  # ML — regression & classification
+  - scikit-learn
+  - xgboost
+  - joblib
+  # viz
+  - matplotlib
+  - seaborn
+  # notebooks
+  - jupyter
+  - ipykernel
+  # deep learning / ESM-2
+  - pytorch
+  - tqdm
+  - pip
+  - pip:
+      - fair-esm

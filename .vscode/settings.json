@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "/opt/miniconda3/envs/petase_structure_activity/bin/python",
+  "python.condaPath": "/opt/miniconda3/bin/conda",
+  "jupyter.kernels.excludePythonEnvironments": [],
+  "notebook.defaultFormatter": "ms-python.python"
+}
