@@ -1,8 +1,14 @@
+follow instructions in the repo readme. For the coding aspects here, working in a jupyter notebook
+
+
 1. Understand the problem
 --------------------------------------------
 
-- We need to write scripts for a model that can encode structures with multiple types of embeddings, with base ESM 650M, base GearNet, ESM-GearNet, and ProteinMPNN
--We can fit these embeddings on the Seo, NB, and Rodney data and/or modify training objective for Rodney's project so we can prove structure-environment relationships
+- We need to write scripts for a model that can encode structures with multiple types of embeddings,
+ with base ESM 650M, base GearNet, ESM-GearNet, and ProteinMPNN
+
+-We can fit these embeddings on the Seo, NB, and Rodney data and/or modify training objective for
+ Rodney's project so we can prove structure-environment relationships
 
 
 2. Understand the data before coding
@@ -10,10 +16,17 @@
 
 - The NB data contains 214 columns which correspond
 
-- In Seo et al; 2025, the primary and secondary screens together resulted in 158 unique protein variants that were cloned and assayed for enzymatic activity.
-The activity data can be found in Seo_data3.csv and has many variants (rows) and other information (columns) from the authors. In my predict_p450 workspace I made a notebook called that removed duplicates and extractes only variant libaray ID, accession code, seqs, and activity which resulted in a file called Seo_tested_seq.csv. I copied this notebook and the csv file over to this workspace/project.
+- In Seo et al; 2025, the primary and secondary screens together resulted in 158 unique
+protein variants that were cloned and assayed for enzymatic activity. The activity data
+ can be found in Seo_data3.csv and has many variants (rows) and other information (columns)
+from the authors. In my predict_p450 workspace I made a notebook called that removed 
+duplicates and extractes only variant libaray ID, accession code, seqs, and activity 
+which resulted in a file called Seo_tested_seq.csv. I copied this notebook and the 
+csv file over to this workspace/project.
 
-- Do exploratory data analysis, look at class balance, build a histogram etc before coding. Nathan did this already tho
+- Do exploratory data analysis, look at class balance, build a histogram etc before coding.
+ Nathan did this already tho
 
 
-3.
+3. Design a solution to the problem
+--------------------------------------------
