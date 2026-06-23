@@ -8,11 +8,12 @@
 2. Understand the data before coding
 --------------------------------------------
 
-- The NB data contains 214 columns which corresp
-- In Seo et al; 2025, the primary and secondary screens together resulted in 158 unique protein variants that were cloned and assayed for enzymatic activity.
-The activity data can be found in Seo_data3.csv, however this includes other proteins that were not assayed or are not part of the 158 that are of interest to us. The list of 158 that are of interest to us are in seo_petase_final_summary.csv. In order to create a training set for a seo model we need a way to match each pdb file with it's proper corresponding activity data point
+- The NB data contains 214 columns which correspond
 
-- Do exploratory data analysis, look at class balance, build a histogram etc before coding
+- In Seo et al; 2025, the primary and secondary screens together resulted in 158 unique protein variants that were cloned and assayed for enzymatic activity.
+The activity data can be found in Seo_data3.csv and has many variants (rows) and other information (columns) from the authors. In my predict_p450 workspace I made a notebook called that removed duplicates and extractes only variant libaray ID, accession code, seqs, and activity which resulted in a file called Seo_tested_seq.csv. I copied this notebook and the csv file over to this workspace/project.
+
+- Do exploratory data analysis, look at class balance, build a histogram etc before coding. Nathan did this already tho
 
 
 3.
