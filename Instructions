@@ -30,3 +30,8 @@ csv file over to this workspace/project.
 
 3. Design a solution to the problem
 --------------------------------------------
+
+- Add datasets, paper pdfs, paper supplementary infos, notebooks for datasets, and other stuff
+so that cursor can read, understand, adn work with everything that im working with
+
+- Create a conda environment that is capable of of writing notebooks, do modeling, embedding, and has utilitie 

@@ -1,0 +1,6 @@
+cd /Users/andrewlee/Documents/Keasling/Nathan_Kyro/PETase/PETase_structure_activity
+conda activate petase_structure_activity
+
+python toy/extract_esm2_embeddings_toy.py \
+  --pdb_dir toy/other_3_toy_seo_pdbs \
+  --output_dir toy/embeddings
