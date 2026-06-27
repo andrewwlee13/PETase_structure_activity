@@ -4,3 +4,11 @@ conda activate petase_structure_activity
 python toy/extract_esm2_embeddings_toy.py \
   --pdb_dir toy/other_3_toy_seo_pdbs \
   --output_dir toy/embeddings
+
+
+  mybrc.somethin berkleye
+  savioc compute cluster
+  create an account and request to join our project fc_pkss (there are some hlep pages for this)
+  then nathan can approve, and i can log in using ssh
+
+  on demand berkeley so no ssh login 
