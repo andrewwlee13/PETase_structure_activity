@@ -6,6 +6,8 @@ python toy/extract_esm2_embeddings_toy.py \
   --output_dir toy/embeddings
 
 
+
+IN ORDER TO ACCESS THE SUPER COMPUTER SO THAT WAY I CAN EMBED MYSELF 
   mybrc.somethin berkleye
   savioc compute cluster
   create an account and request to join our project fc_pkss (there are some hlep pages for this)
