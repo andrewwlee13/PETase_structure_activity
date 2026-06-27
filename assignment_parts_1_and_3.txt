@@ -1,0 +1,26 @@
+Part 1 - Orientation
+
+Three concepts I learned and used in my current research/work experience are:
+
+1. I learned the importance of keeping work organized into clear steps so a larger project does not become confusing. In my PETase structure-activity project, I separated the workflow into data preparation, embedding extraction, merging embeddings with activity labels, and model training/evaluation.
+
+2. I learned that reproducibility is important when doing technical work. Instead of manually changing notebooks every time, I am working toward using scripts and configuration-style settings so the same pipeline can be run again on different datasets, embedding types, and model settings.
+
+3. I learned that workplace communication and planning are important when using shared computing resources. Since embedding protein structures with models like ESM-2 can be too slow on my personal computer, I need to coordinate with mentors to access external compute resources, understand where scripts should be run, and make sure the outputs can be shared back into the project.
+
+
+Part 3 - Work-Based Learning Objective
+
+21st Century Skill Focus Area: Technology Literacy / Job Knowledge
+
+WBL Objective: To develop and document a reproducible protein embedding and modeling pipeline for PETase structure-activity prediction by organizing scripts, data folders, and model training workflows so that the pipeline can be run on local test data and later on external compute resources by the end of the summer term.
+
+To: develop
+
+Action Word: develop
+
+Description: a reproducible protein embedding and model-training pipeline for PETase structure-activity analysis
+
+Measurement: pipeline can run on toy data, produce aligned feature/label arrays, and include clear instructions for running embedding scripts on external compute
+
+Completion Date: by the end of the summer term
