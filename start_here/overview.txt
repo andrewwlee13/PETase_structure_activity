@@ -1,0 +1,33 @@
+
+
+┌─────────────────────────────────────────────────────────┐
+│  CONFIG                                                 │
+│  pdb_dir, output_dir, which embedders to run, etc.      │
+└──────────────────────────┬──────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│  WRAPPER SCRIPT  ← Nathan's "collection of scripts"     │
+│  reads config, loops PDB dir, calls embedders           │
+└───┬─────────┬─────────┬─────────┬───────────────────────┘
+    │         │         │         │
+    ▼         ▼         ▼         ▼
+  ESM-2    GearNet  ESM-GearNet  ProteinMPNN
+  script   script   script       script
+    │         │         │         │
+    └─────────┴─────────┴─────────┘
+                           │
+                           ▼
+              embeddings/  (.npz per protein)
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│  MERGE SCRIPT / NOTEBOOK  (you — not the wrapper)       │
+│  labels CSV + embeddings → feature table (optional CSV)  │
+└──────────────────────────┬──────────────────────────────┘
+                           │
+                           ▼
+┌─────────────────────────────────────────────────────────┐
+│  TRAIN SCRIPT / NOTEBOOK  (you — not the wrapper)       │
+│  X, y → model                                             │
+└─────────────────────────────────────────────────────────┘
