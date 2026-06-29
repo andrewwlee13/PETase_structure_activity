@@ -3,6 +3,7 @@
   "python.condaPath": "/opt/miniconda3/bin/conda",
   "jupyter.kernels.excludePythonEnvironments": [],
   "notebook.defaultFormatter": "ms-python.python",
+  "terminal.integrated.padding": "12px",
   "cursor.tab.enabled": false,
   "editor.suggest.enabled": false,
   "editor.quickSuggestions": {
