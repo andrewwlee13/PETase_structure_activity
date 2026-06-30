@@ -1,0 +1,42 @@
+paths:
+  pdb_dir:
+  output_dir:
+  labels.csv:
+
+embedders:
+  esm2:
+    enabled:
+    script:
+    model:
+    device:
+    batch_size:
+
+  proteinmpnn:
+    enabled:
+    script:
+    model:
+    device:
+    batch_size:
+
+    gearnet:
+    enabled:
+    script:
+    model:
+    device:
+    batch_size:
+
+  esm_gearnet:
+    enabled:
+    script:
+    model:
+    device:
+    batch_size:
+
+
+merge:
+  embedding_glob:
+  embedding_key:
+  pool:
+  id_column:
+  label_column:
+  id_from_filename:
