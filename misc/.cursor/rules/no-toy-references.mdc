@@ -1,0 +1,13 @@
+---
+description: Preserve toy/ folder; do not use it for active workflow
+alwaysApply: true
+---
+
+# Toy folder is preserved, not active
+
+The `toy/` directory is kept for reference and should not be modified, renamed, or deleted.
+
+- Keep all `toy/` filenames as-is (e.g. `seo_13_toy.pdb`, `*_toy.csv`)
+- Do not edit files inside `toy/` unless the user explicitly asks
+- For active embedding/training work, use real dataset configs: `start_here/configs/seo.yaml`, etc.
+- Example active paths: `Data/Seo_data/seo_final_pdbs`, `embeddings_npz/seo_embeddings`

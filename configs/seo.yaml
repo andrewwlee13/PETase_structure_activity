@@ -1,0 +1,25 @@
+paths:
+  pdb_dir: Data/Seo_data/seo_final_pdbs
+  output_dir: start_here/embeddings_npz/seo_embeddings
+  labels_csv: Data/Seo_data/misc_old/Seo_tested_seq.csv
+
+embedders:
+  esm2:
+    enabled: true
+    output_subdir: seo_esm2_embeddings
+    model: esm2_t33_650M_UR50D
+    device: cpu
+    batch_size: 1
+
+  proteinmpnn:
+    enabled: true
+    output_subdir: seo_mpnn_embeddings
+    model: v_48_020
+    device: cpu
+    simple: false
+
+  gearnet:
+    enabled: false
+
+  esm_gearnet:
+    enabled: false

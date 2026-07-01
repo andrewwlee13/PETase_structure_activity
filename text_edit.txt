@@ -1,11 +1,8 @@
 cd /Users/andrewlee/Documents/Keasling/Nathan_Kyro/PETase/PETase_structure_activity
 conda activate petase_structure_activity
 
-python toy/extract_esm2_embeddings_toy.py \
-  --pdb_dir toy/other_3_toy_seo_pdbs \
-  --output_dir toy/embeddings
-
-
+python start_here/wrapper.py --config start_here/configs/seo.yaml
+python start_here/wrapper.py --config start_here/configs/seo.yaml --dry-run
 
 IN ORDER TO ACCESS THE SUPER COMPUTER SO THAT WAY I CAN EMBED MYSELF 
   mybrc.somethin berkleye
@@ -14,3 +11,14 @@ IN ORDER TO ACCESS THE SUPER COMPUTER SO THAT WAY I CAN EMBED MYSELF
   then nathan can approve, and i can log in using ssh
 
   on demand berkeley so no ssh login 
+
+
+
+  python embedding_scripts/extract_proteinmpnn_embeddings.py \
+                        --pdb_dir ../Data/Seo_data/seo_final_pdbs \
+                        --output_dir embeddings_npz/seo_embeddings/seo_mpnn_embeddings \
+                        --device cpu
+
+python extract_esm2_embeddings.py --pdb_dir petase_structure_activity/Data/Seo_data/seo_final_pdbs \
+                                      --output_dir embeddings_npz/seo_embeddings/seo_esm2_embeddings \
+                                      --model esm2_t33_650M_UR50D
